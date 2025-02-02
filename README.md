@@ -2,7 +2,7 @@
 # Diamond-Square Terrain Generation Algorithm
 
 ## Demonstration
-
+Demo implemented using Raylib
 
 https://github.com/user-attachments/assets/8fc5831c-6954-4ca7-93a8-3a518dec6272
 
