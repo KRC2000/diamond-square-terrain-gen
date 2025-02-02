@@ -1,5 +1,5 @@
 
-# Diamond-Square Terrain Generation Algorithm
+# Minimal Diamond-Square Terrain Generation Algorithm Implementation
 
 ## Demonstration
 Demo implemented using Raylib
