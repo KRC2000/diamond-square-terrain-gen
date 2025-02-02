@@ -36,8 +36,7 @@ int main() {
 	int screenSize = 512 + 1;
 	InitWindow(screenSize, screenSize, "Gen algo test");
 
-	float** map =
-		GenHMapDiamondSquare(resolutions[resId], magnitude, smoothing);
+	float** map = GenHMapDiamondSquare(resolutions[resId], magnitude, smoothing);
 
 	RenderTexture2D rt; 
 	regenTexture(&rt, map, resolutions[resId]);
@@ -70,12 +69,15 @@ int main() {
 			regenTexture(&rt, map, resolutions[resId]);
 		}
 
+		char str[10];
+		sprintf(str, "%f", magnitude);
 		GuiSliderBar(
 			(Rectangle){(float)screenSize / 2 - 75, screenSize - 30, 150, 30},
-			"Noise Magnitude", "0-1", &magnitude, 0, 1);
+			"Noise Magnitude(0-1)", str, &magnitude, 0, 1);
+		sprintf(str, "%f", smoothing);
 		GuiSliderBar(
 			(Rectangle){(float)screenSize / 2 - 75, screenSize - 60, 150, 30},
-			"Smoothing Factor", "0-3", &smoothing, 0, 3);
+			"Smoothing Factor(0-3)", str, &smoothing, 0, 3);
 		if (magnitude != prevMagnitude || smoothing != prevSmoothing) {
 			FreeHMap(map, resolutions[resId]);
 			map = GenHMapDiamondSquare(resolutions[resId], magnitude, smoothing);

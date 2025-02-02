@@ -1,14 +1,9 @@
 #include "diamond_square_algo.h"
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include <assert.h>
 #include <time.h>
 
 // https://janert.me/blog/2022/the-diamond-square-algorithm-for-terrain-generation/
-
 
 float** GenHMapDiamondSquare(size_t size, float noiseMagnitude, float smoothFactor) {
 	srand(time(NULL));
