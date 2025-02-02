@@ -46,4 +46,10 @@ for (size_t x = 0; x < mapSize; x++) {
 }
 ```
 
+5. When you don't need map data anymore - free it. You can do it manually just like you free any 2D array or you can call `FreeHMap()`;
+
+```c
+FreeHMap(map, mapSize);
+```
+
 
