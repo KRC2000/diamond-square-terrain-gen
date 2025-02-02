@@ -4,6 +4,10 @@
 ## Demonstration
 
 
+https://github.com/user-attachments/assets/8fc5831c-6954-4ca7-93a8-3a518dec6272
+
+
+
 ## How To Utilize
 
 1. Copy `diamond_square_algo.h` and `diamond_square_algo.c` into your project.
